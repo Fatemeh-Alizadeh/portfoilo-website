@@ -1,10 +1,52 @@
-.logo-s{
-    color: aqua;
-}
-.logo{
-    color: rgb(221, 222, 223);
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap");
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
-#nav_custom{
-    background-color: darkslategray;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --ff-body: "Roboto", sans-serif;
+  --ff-title: "Josefin Sans", sans-serif;
+
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+
+  --clr-dark: #29293d;
+  --clr-light: #f2f2f2;
+  --clr-accent: #ffbb99;
+}
+
+html body {
+  background-color: var(--clr-dark);
+}
+.navbar .container .logo {
+  font-family: "Lobster", cursive;
+  font-weight: 500;
+  color: var(--clr-light);
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.navbar .container .logo-s {
+  color: var(--clr-accent);
+}
+.navbar .container .navbar-nav .nav-item .nav-link {
+  color: var(--clr-light);
+  padding-left: 1.5rem;
+}
+.navbar .container .navbar-nav .nav-item .nav-link:hover {
+  color: var(--clr-accent);
 }
