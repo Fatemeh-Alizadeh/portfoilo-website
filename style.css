@@ -30,7 +30,24 @@
   --clr-accent: #ffbb99;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-title);
+}
+
+p {
+  font-family: var(--fs-body);
+}
+
 html body {
+}
+/* ...........navbar style............. */
+
+.navbar {
   background-color: var(--clr-dark);
 }
 .navbar .container .logo {
@@ -49,4 +66,76 @@ html body {
 }
 .navbar .container .navbar-nav .nav-item .nav-link:hover {
   color: var(--clr-accent);
+}
+.navbar .container .navbar-toggler {
+  padding: 0.1rem;
+}
+
+/* ..............home-section style............. */
+
+.home {
+  height: 100vh;
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  text-align: center;
+  padding-top: 30vh;
+  position: relative;
+}
+.contact-button {
+  width: 7rem;
+  height: 2.5rem;
+  margin-top: 1rem;
+  padding: 0.25rem;
+  background-color: var(--clr-accent);
+  color: var(--clr-light);
+  border: none;
+  border-radius: 30px;
+}
+.home h1 {
+  color: var(--clr-accent);
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+}
+
+/* ............Design Element................ */
+
+.element-1 {
+  width: 30px;
+  height: 30px;
+  background-color: #0000ff;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  animation: spin 11s ease-in-out infinite;
+}
+.element-2 {
+  width: 100px;
+  height: 100px;
+  background-color: #ffff66;
+  border-radius: 50%;
+  position: absolute;
+  top: 30%;
+  right: -50px;
+  animation: bounce 10s linear infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(3rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
