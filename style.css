@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap");
-
+/* ...............general styling............ */
 *,
 *::before,
 *::after {
@@ -44,7 +44,13 @@ p {
 }
 
 html body {
+  overflow: hidden;
 }
+section {
+  padding-top: 30vh;
+  padding-bottom: 20vh;
+}
+
 /* ...........navbar style............. */
 
 .navbar {
@@ -78,8 +84,11 @@ html body {
   background-color: var(--clr-dark);
   color: var(--clr-light);
   text-align: center;
-  padding-top: 30vh;
+
   position: relative;
+}
+.home.container {
+  z-index: 5;
 }
 .contact-button {
   width: 7rem;
@@ -98,7 +107,7 @@ html body {
   text-transform: uppercase;
 }
 
-/* ............Design Element................ */
+/* ............Animated Element................ */
 
 .element-1 {
   width: 30px;
@@ -107,18 +116,77 @@ html body {
   position: absolute;
   top: 10%;
   left: 10%;
-  animation: spin 11s ease-in-out infinite;
+  animation: spin 15s ease-in-out infinite;
 }
 .element-2 {
   width: 100px;
   height: 100px;
-  background-color: #ffff66;
+  border: 15px solid #ffff80;
   border-radius: 50%;
   position: absolute;
   top: 30%;
   right: -50px;
   animation: bounce 10s linear infinite;
 }
+.element-3 {
+  border-top: 40px solid transparent;
+  border-left: 40px solid #99ff99;
+  position: absolute;
+  top: 10%;
+  right: 50%;
+  animation: walk 15s linear infinite;
+}
+.element-3::after {
+  content: "";
+  border-top: 40px solid transparent;
+  border-left: 40px solid rgb(102, 255, 102, 0.3);
+  position: absolute;
+  top: -32px;
+  right: 8px;
+}
+.element-4 {
+  width: 60px;
+  height: 60px;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  background-color: #b3ffff;
+  position: absolute;
+  top: 60%;
+  right: 20%;
+  animation: spin 18s ease-in-out infinite;
+}
+.element-5 {
+  width: 50px;
+  height: 60px;
+  clip-path: polygon(78% 0, 78% 66%, 97% 67%, 50% 100%, 0 68%, 22% 67%, 22% 0);
+  background-color: #ffccff;
+  position: absolute;
+  top: 70%;
+  right: 75%;
+  animation: bounce 16s ease-in infinite;
+}
+@keyframes walk {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(3rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 @keyframes bounce {
   0% {
     transform: translateY(0);
