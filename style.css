@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap");
-/* ...............general styling............ */
+
+/* ...............General styling............ */
 *,
 *::before,
 *::after {
@@ -37,20 +38,24 @@ h4,
 h5,
 h6 {
   font-family: var(--ff-title);
+  text-transform: uppercase;
+  color: var(--clr-dark);
 }
 
 p {
   font-family: var(--fs-body);
+  color: var(--clr-dark);
 }
 
-html body {
+span {
+  color: var(--clr-accent);
 }
 section {
   padding-top: 30vh;
   padding-bottom: 20vh;
 }
 
-/* ...........navbar style............. */
+/* ...........Navbar style............. */
 
 .navbar {
   background-color: var(--clr-dark);
@@ -60,8 +65,8 @@ section {
   font-weight: 500;
   color: var(--clr-light);
   font-size: 1.5rem;
-  padding: 1rem;
 }
+
 .navbar .container .logo-s {
   color: var(--clr-accent);
 }
@@ -76,7 +81,7 @@ section {
   padding: 0.1rem;
 }
 
-/* ..............home-section style............. */
+/* ..............Home-section style............. */
 
 .home {
   height: 100vh;
@@ -173,6 +178,7 @@ section {
   top: 70%;
   right: 75%;
   animation: bounce 16s ease-in-out infinite;
+  border: none;
 }
 @keyframes walk {
   0% {
@@ -205,4 +211,10 @@ section {
   100% {
     transform: rotate(360deg);
   }
+}
+
+/* ................About Section.............. */
+.about_img {
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
