@@ -44,7 +44,6 @@ p {
 }
 
 html body {
-  overflow: hidden;
 }
 section {
   padding-top: 30vh;
@@ -114,7 +113,7 @@ section {
   height: 30px;
   background-color: #0000ff;
   position: absolute;
-  top: 10%;
+  top: 30%;
   left: 10%;
   animation: spin 15s ease-in-out infinite;
 }
@@ -132,7 +131,7 @@ section {
   border-top: 40px solid transparent;
   border-left: 40px solid #99ff99;
   position: absolute;
-  top: 10%;
+  top: 15%;
   right: 50%;
   animation: walk 15s linear infinite;
 }
@@ -173,7 +172,7 @@ section {
   position: absolute;
   top: 70%;
   right: 75%;
-  animation: bounce 16s ease-in infinite;
+  animation: bounce 16s ease-in-out infinite;
 }
 @keyframes walk {
   0% {
