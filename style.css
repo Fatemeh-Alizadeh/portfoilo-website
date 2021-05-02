@@ -39,12 +39,12 @@ h5,
 h6 {
   font-family: var(--ff-title);
   text-transform: uppercase;
-  color: var(--clr-dark);
+  color: var(--clr-light);
 }
 
 p {
   font-family: var(--fs-body);
-  color: var(--clr-dark);
+  color: var(--clr-light);
 }
 
 span {
@@ -214,7 +214,14 @@ section {
 }
 
 /* ................About Section.............. */
+
 .about_img {
   border-radius: 3px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.about_text h2 {
+  color: var(--clr-dark);
+}
+.about_text p {
+  color: var(--clr-dark);
 }
