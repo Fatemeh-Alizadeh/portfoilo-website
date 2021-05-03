@@ -51,8 +51,8 @@ span {
   color: var(--clr-accent);
 }
 section {
-  padding-top: 30vh;
-  padding-bottom: 20vh;
+  padding: 5rem 3rem;
+  text-align: center;
 }
 
 /* ...........Navbar style............. */
@@ -105,6 +105,7 @@ section {
   border-radius: 30px;
 }
 .home h1 {
+  margin-top: 10rem;
   color: var(--clr-accent);
   font-size: var(--fs-h1);
   font-weight: var(--fw-bold);
@@ -136,7 +137,7 @@ section {
   border-top: 40px solid transparent;
   border-left: 40px solid #99ff99;
   position: absolute;
-  top: 15%;
+  top: 75%;
   right: 50%;
   animation: walk 15s linear infinite;
 }
@@ -224,4 +225,33 @@ section {
 }
 .about_text p {
   color: var(--clr-dark);
+}
+
+/* .....................Projects Section.................... */
+
+.projects {
+  background-color: var(--clr-dark);
+}
+.projects_title,
+.projects_text {
+  padding: 1rem;
+}
+
+.projects .row .card {
+  margin: 1rem;
+  text-align: center;
+  background-color: var(--clr-dark);
+  border: 1px solid var(--clr-accent);
+  border-radius: 5px;
+}
+.card-text {
+  font-size: var(--fs-body);
+  font-weight: var(--fw-reg);
+}
+.card-link {
+  color: var(--clr-light);
+  text-decoration: none;
+}
+.card-link:hover {
+  color: var(--clr-accent);
 }

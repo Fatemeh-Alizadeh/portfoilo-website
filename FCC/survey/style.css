@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url("https://99designs-blog.imgix.net/blog/wp-content/uploads/2020/04/attachment_116486210-e1586178471519.jpeg?auto=format&q=60&fit=max&w=930");
+  background-size: cover;
+  background-position: center;
+}
+#main {
+  width: 80%;
+  background-color: rgba(236, 230, 121, 0.8);
+  margin: 10rem auto;
+  position: relative;
+  padding: 3rem;
+  font-family: "Architects Daughter", cursive;
+  border: 4px solid #e69900;
+  border-radius: 8px;
+  color: #805500;
+}
+#head {
+  text-align: center;
+}
+#title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  position: relative;
+}
+#description {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+input {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #e69900;
+  border-radius: 5px;
+}
+
+label {
+  font-size: 20px;
+}
+div {
+  margin-bottom: 15px;
+}
+#dropdown {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #e69900;
+  border-radius: 5px;
+}
+p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.radio input {
+  display: none;
+}
+.radio-label {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  margin-left: 30px;
+}
+.radio label::after {
+  content: "";
+  width: 1.2em;
+  height: 1.2em;
+  border: 2px solid #e69900;
+  border-radius: 50%;
+  margin-left: 30px;
+  align-items: center;
+  position: absolute;
+  left: 60px;
+}
+.radio label::before {
+  content: "";
+  width: 1em;
+  height: 1em;
+  background: #e69900;
+  border-radius: 50%;
+  margin-left: 30px;
+  align-items: center;
+  position: absolute;
+  left: 64px;
+  opacity: 0;
+}
+.radio input:checked + .radio-label::before {
+  opacity: 1;
+}
+.checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  margin-left: 30px;
+}
+.checkbox input {
+  display: none;
+}
+input[type="checkbox"] + .checkbox-label {
+  display: block;
+  margin-bottom: 20px;
+}
+input[type="checkbox"] + .checkbox-label::after {
+  content: "\2714";
+  border: 2px solid #e69900;
+  border-radius: 4px;
+  display: inline-block;
+  width: 0.9em;
+  height: 0.9em;
+  padding-left: 0.2em;
+  padding-bottom: 0.3em;
+  position: absolute;
+  left: 110px;
+  color: transparent;
+}
+input[type="checkbox"]:checked + .checkbox-label::after {
+  background-color: #e69900;
+  color: rgba(236, 230, 121);
+}
+#library {
+  width: 100%;
+  height: 100px;
+  display: block;
+  border: 2px solid #e69900;
+  border-radius: 5px;
+  margin-top: 20px;
+  outline: none;
+}
+#submit {
+  width: 150px;
+  height: 60px;
+  display: block;
+  background-color: #e69900;
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  margin: 10px auto;
+  text-align: center;
+  color: #805500;
+  font-size: 1.5em;
+  font-weight: 400;
+  cursor: pointer;
+}
+#submit:hover {
+  background-color: #e68a00;
+}
+#submit:active {
+  background-color: #e68a00;
+  transform: translateY(5px);
+}

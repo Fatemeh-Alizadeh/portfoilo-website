@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survay Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+        <div id="main">
+            <div id="head">
+                <h1 id="title">casey library survey form</h1>
+                <p id="description">thanks for filling in our survey. we'll keep responses anonymous.</p>
+    
+            </div>
+            <form id="survey-form">
+                <div>
+                    <label for="name" id="name-label">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="name" required>
+                </div>
+                <div>
+                    <label for="email" id="email-label">email:</label>
+                    <input type="email" id="email" name="email" placeholder="email" required>
+                </div>
+                <div>
+                    <label for="number" id="number-label">age:</label>
+                    <input type="number" id="number" name="age" min="1" max="200" placeholder="age">
+                </div>
+                <div>
+                    <label for="dropdown" id="">
+                        what is your occupation?
+                    </label>
+                    <select id="dropdown" name="dropdown">
+                        <option disabled selected>choose one</option>
+                        <option value="student">student</option>
+                        <option value="fulltime">full time job</option>
+                        <option value="nottosay">prefer not to say</option>
+                        <option value="other">other</option>
+    
+                    </select>
+                    <div class="radio">
+                        <p>please select your gender:</p>
+    
+                        <input type="radio" name="gender" id="male" value="male">
+                        <label for="male" class="radio-label">male</label>
+                        <div class="radio-button"></div>
+    
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="female" class="radio-label">female</label>
+                        <div class="radio-button"></div>
+    
+                        <input type="radio" name="gender" id="other" value="other">
+                        <label for="other" class="radio-label">other</label>
+                        <div class="radio-button"></div>
+                    </div>
+                    <div class="checkbox">
+                        <p>what do you prefer to read:</p>
+                        <input type="checkbox" id="fiction" name="fiction" value="fiction">
+                        <label for="fiction" class="checkbox-label">fiction</label>
+                        <input type="checkbox" id="nonfiction" name="nonfiction" value="nonfiction">
+                        <label for="nonfiction" class="checkbox-label">nonfiction</label>
+                    </div>
+                    <div>
+                        <label for="library">Any comments or suggestions?</label>
+                        <textarea id="library" name="library" placeholder="enter you comment here"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" id="submit">
+                    </div>
+    
+    
+            </form>
+        </div>
+    
+    
+</body>
+</html>
