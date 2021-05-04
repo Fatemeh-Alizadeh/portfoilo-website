@@ -266,3 +266,40 @@ section {
 .card-link:hover {
   color: var(--clr-accent);
 }
+
+/* .......................Contact Section............. */
+
+.contact-title {
+  color: var(--clr-dark);
+  margin-bottom: 2rem;
+}
+label {
+  color: var(--clr-dark);
+  display: block;
+  padding: 1rem;
+  font-family: var(--ff-title);
+}
+input,
+textarea {
+  width: 30%;
+  height: 2rem;
+  border: 2px solid var(--clr-dark);
+  border-radius: 5px;
+}
+textarea {
+  height: 5rem;
+}
+.button {
+  width: 8.5rem;
+  height: 2.5rem;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  border: none;
+  border-radius: 30px;
+  transition: transform 0.2s ease-in-out;
+}
+.button:hover {
+  transform: scale(1.5);
+}
