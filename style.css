@@ -51,7 +51,7 @@ span {
   color: var(--clr-accent);
 }
 section {
-  padding: 7rem 3rem;
+  padding: 10rem 3rem;
   text-align: center;
 }
 
@@ -99,11 +99,32 @@ section {
   height: 2.5rem;
   margin-top: 1rem;
   padding: 0.5rem;
+  position: relative;
   background-color: var(--clr-accent);
-  color: var(--clr-light);
+  color: var(--clr-dark);
   border: none;
-  border-radius: 30px;
+  border-radius: 5px;
+  z-index: 1;
 }
+.cv-btn::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--clr-light);
+  border-radius: 5px;
+  z-index: -1;
+  transition: transform 0.3s ease-in-out;
+  transform: scale(0);
+  transform-origin: bottom right;
+}
+.cv-btn:hover::after {
+  transform: scale(1);
+  transform-origin: top left;
+}
+
 .home h1 {
   margin-top: 10rem;
   color: var(--clr-accent);
@@ -281,7 +302,7 @@ label {
 }
 input,
 textarea {
-  width: 30%;
+  width: 80%;
   height: 2rem;
   border: 2px solid var(--clr-dark);
   border-radius: 5px;
@@ -292,14 +313,58 @@ textarea {
 .button {
   width: 8.5rem;
   height: 2.5rem;
+  position: relative;
   margin-top: 1rem;
   padding: 0.5rem;
   background-color: var(--clr-dark);
   color: var(--clr-light);
   border: none;
-  border-radius: 30px;
-  transition: transform 0.2s ease-in-out;
+  outline: none;
+  border-radius: 5px;
+  z-index: 1;
 }
-.button:hover {
-  transform: scale(1.5);
+.button::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--clr-accent);
+  border-radius: 5px;
+  z-index: -1;
+  transition: transform 0.3s ease-in-out;
+  transform: scale(0);
+  transform-origin: bottom right;
+}
+.button:hover::after {
+  transform: scale(1);
+  transform-origin: top left;
+}
+@media (min-width: 800px) {
+  input,
+  textarea {
+    width: 35%;
+  }
+}
+
+i {
+  display: flex;
+  font-size: 1.5em;
+  margin: 3rem 1rem;
+  color: var(--clr-dark);
+  position: relative;
+}
+.phone i:hover::after {
+  content: "Email:" "" attr(data-email);
+  position: absolute;
+  left: 50%;
+  top: 105%;
+  vertical-align: middle;
+  padding: 0.5rem;
+  white-space: nowrap;
+  font-size: var(--fs-body);
+  color: var(--clr-accent);
+  background-color: var(--clr-dark);
+  border-radius: 3px;
 }
