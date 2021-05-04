@@ -51,7 +51,7 @@ span {
   color: var(--clr-accent);
 }
 section {
-  padding: 5rem 3rem;
+  padding: 7rem 3rem;
   text-align: center;
 }
 
@@ -94,11 +94,11 @@ section {
 .home.container {
   z-index: 5;
 }
-.contact-button {
-  width: 7rem;
+.cv-btn {
+  width: 8.5rem;
   height: 2.5rem;
   margin-top: 1rem;
-  padding: 0.25rem;
+  padding: 0.5rem;
   background-color: var(--clr-accent);
   color: var(--clr-light);
   border: none;
@@ -137,7 +137,7 @@ section {
   border-top: 40px solid transparent;
   border-left: 40px solid #99ff99;
   position: absolute;
-  top: 75%;
+  top: 85%;
   right: 50%;
   animation: walk 15s linear infinite;
 }
@@ -167,8 +167,8 @@ section {
   background-color: #b3ffff;
   position: absolute;
   top: 60%;
-  right: 20%;
-  animation: spin 18s ease-in-out infinite;
+  right: 10%;
+  animation: blink 10s ease-in-out infinite;
 }
 .element-5 {
   width: 50px;
@@ -180,6 +180,17 @@ section {
   right: 75%;
   animation: bounce 16s ease-in-out infinite;
   border: none;
+}
+@keyframes blink {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 @keyframes walk {
   0% {
