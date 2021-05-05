@@ -53,6 +53,7 @@ span {
 section {
   padding: 10rem 3rem;
   text-align: center;
+  width: 100%;
 }
 
 /* ...........Navbar style............. */
@@ -84,6 +85,7 @@ section {
 /* ..............Home-section style............. */
 
 .home {
+  width: 100%;
   height: 100vh;
   background-color: var(--clr-dark);
   color: var(--clr-light);
@@ -147,18 +149,18 @@ section {
 .element-2 {
   width: 100px;
   height: 100px;
-  border: 15px solid #ffff80;
-  border-radius: 50%;
+  background-color: #ffffcc;
+  clip-path: circle(50% at 100% 51%);
   position: absolute;
   top: 30%;
-  right: -50px;
+  right: 0;
   animation: bounce 10s linear infinite;
 }
 .element-3 {
   border-top: 40px solid transparent;
   border-left: 40px solid #99ff99;
   position: absolute;
-  top: 85%;
+  top: 90%;
   right: 50%;
   animation: walk 15s linear infinite;
 }
@@ -350,12 +352,26 @@ textarea {
 
 i {
   display: flex;
-  font-size: 1.5em;
+  font-size: 2em;
   margin: 3rem 1rem;
   color: var(--clr-dark);
   position: relative;
 }
 .phone i:hover::after {
+  content: "Phone:" "" attr(data-email);
+  position: absolute;
+  left: 50%;
+  top: 105%;
+  vertical-align: middle;
+  padding: 0.5rem;
+  white-space: nowrap;
+  font-size: var(--fs-body);
+  font-weight: var(--fw-reg);
+  color: var(--clr-accent);
+  background-color: var(--clr-dark);
+  border-radius: 3px;
+}
+.mail i:hover::after {
   content: "Email:" "" attr(data-email);
   position: absolute;
   left: 50%;
@@ -364,7 +380,11 @@ i {
   padding: 0.5rem;
   white-space: nowrap;
   font-size: var(--fs-body);
+  font-weight: var(--fw-reg);
   color: var(--clr-accent);
   background-color: var(--clr-dark);
   border-radius: 3px;
+}
+i:hover {
+  color: var(--clr-accent);
 }
