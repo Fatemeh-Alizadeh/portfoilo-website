@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./jack-b-0iaJQ4WK0BM-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 100vh;
+  color: #ccffff;
+  font-family: "Alex Brush", cursive;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+section h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  margin-top: 2rem;
+}
+.timer {
+  display: flex;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.days,
+.hours,
+.minuts,
+.seconds {
+  margin: 1rem;
+  padding: 0.5rem;
+}
