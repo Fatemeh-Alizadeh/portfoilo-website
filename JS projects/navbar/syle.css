@@ -32,11 +32,21 @@ nav {
   top: 0;
   right: 0;
   border-radius: 20% 0 0 20%;
+  transition: all 0.5s ease-in-out;
+}
+.nav-menu {
+  height: 0;
+  overflow: auto;
+  transition: all 0.5s ease-in-out;
 }
 .logo {
   position: fixed;
   top: 20px;
   left: 60%;
+}
+.logo-change {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
 }
 .btn {
   width: 30px;
@@ -57,7 +67,7 @@ nav {
 .change .line-1 {
   transform: rotateZ(45deg) translate(11px, 5px);
 }
-.change.line-2 {
+.change .line-2 {
   opacity: 0;
 }
 .change .line-3 {
