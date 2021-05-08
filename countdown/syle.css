@@ -21,22 +21,27 @@ section {
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
 }
 section h1 {
-  font-size: 5rem;
+  font-size: 3.5rem;
   font-weight: 900;
   margin-top: 2rem;
+
+  word-spacing: 0.75rem;
 }
 .timer {
   display: flex;
   padding: 1rem;
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 500;
 }
 .days,
 .hours,
-.minuts,
+.minutes,
 .seconds {
   margin: 1rem;
   padding: 0.5rem;
+  text-align: center;
 }
