@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  font-family: "Ubuntu", sans-serif;
+}
+
+nav {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    rgba(44, 241, 225, 1) 0%,
+    rgba(32, 144, 232, 1) 48%,
+    rgba(118, 77, 187, 1) 100%
+  );
+  position: fixed;
+  top: 0;
+  right: 0;
+  border-radius: 20% 0 0 20%;
+}
+.logo {
+  position: fixed;
+  top: 20px;
+  left: 60%;
+}
+.btn {
+  width: 30px;
+  height: 25px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+.change .line-1 {
+  transform: rotateZ(45deg) translate(11px, 5px);
+}
+.change.line-2 {
+  opacity: 0;
+}
+.change .line-3 {
+  transform: rotateZ(-45deg) translate(11px, -5px);
+}
+.nav_list {
+  text-align: right;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  list-style: none;
+}
+.nav_link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  padding: 0.5rem;
+}
+.nav_link::before,
+.nav_link::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+  transform: scaleX(0);
+}
+.nav_link::before {
+  top: 0;
+  transform-origin: right;
+}
+.nav_link::after {
+  bottom: 0;
+  transform-origin: left;
+}
+.nav_link:hover::before,
+.nav_link:hover::after {
+  transform: scaleX(1);
+}
+/* .logo {
+  color: #ffe6ff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav_items {
+  display: flex;
+  flex-direction: row;
+}
+.nav_list {
+  padding: 1rem;
+  margin-left: 0.5rem;
+  list-style: none;
+}
+.nav_link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  position: relative;
+}
+.nav_link::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transition: transform 0.3s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: center;
+}
+.nav_link:hover::after {
+  transform: scaleX(1);
+} */
