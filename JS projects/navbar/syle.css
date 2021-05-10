@@ -143,6 +143,9 @@ body {
     transform: scaleX(0);
     transform-origin: center;
   }
+  .nav_link::before {
+    display: none;
+  }
   .nav_link:hover::after {
     transform: scaleX(1);
   }
