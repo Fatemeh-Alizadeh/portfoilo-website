@@ -272,11 +272,15 @@ section {
 }
 
 .projects .row .card {
+  min-height: 16rem;
   margin: 1rem;
   text-align: center;
   background-color: var(--clr-dark);
   border: 1px solid var(--clr-accent);
   border-radius: 5px;
+}
+.card-body {
+  margin-top: 1rem;
 }
 .card-text {
   font-size: var(--fs-body);
@@ -349,42 +353,19 @@ textarea {
     width: 35%;
   }
 }
+.icons {
+  margin-top: 2rem;
+}
 
-i {
-  display: flex;
-  font-size: 2em;
-  margin: 3rem 1rem;
+.icons p {
   color: var(--clr-dark);
-  position: relative;
 }
-.phone i:hover::after {
-  content: "Phone:" "" attr(data-email);
-  position: absolute;
-  left: 50%;
-  top: 105%;
-  vertical-align: middle;
+i {
+  font-size: 1.5rem;
+  color: var(--clr-dark);
   padding: 0.5rem;
-  white-space: nowrap;
-  font-size: var(--fs-body);
-  font-weight: var(--fw-reg);
-  color: var(--clr-accent);
-  background-color: var(--clr-dark);
-  border-radius: 3px;
 }
-.mail i:hover::after {
-  content: "Email:" "" attr(data-email);
-  position: absolute;
-  left: 50%;
-  top: 105%;
-  vertical-align: middle;
-  padding: 0.5rem;
-  white-space: nowrap;
-  font-size: var(--fs-body);
-  font-weight: var(--fw-reg);
-  color: var(--clr-accent);
-  background-color: var(--clr-dark);
-  border-radius: 3px;
-}
-i:hover {
+.icons_link i:hover {
+  cursor: pointer;
   color: var(--clr-accent);
 }
