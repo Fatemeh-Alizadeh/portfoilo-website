@@ -13,11 +13,14 @@
 body {
   height: 100vh;
   font-family: "Ubuntu", sans-serif;
+  background: url(./andrew-small-EfhCUc_fjrU-unsplash.jpg);
+  background-position: center center;
+  background-size: cover;
 }
 
-nav {
+.nav {
   width: 50%;
-  height: 100vh;
+  height: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -32,22 +35,13 @@ nav {
   top: 0;
   right: 0;
   border-radius: 20% 0 0 20%;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in;
+  overflow: hidden;
 }
-.nav-menu {
-  height: 0;
-  overflow: auto;
-  transition: all 0.5s ease-in-out;
+.change {
+  height: 100vh;
 }
-.logo {
-  position: fixed;
-  top: 20px;
-  left: 60%;
-}
-.logo-change {
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
-}
+
 .btn {
   width: 30px;
   height: 25px;
@@ -63,15 +57,16 @@ nav {
   width: 100%;
   height: 2px;
   background-color: black;
+  transition: transform 0.5s ease-in;
 }
 .change .line-1 {
-  transform: rotateZ(45deg) translate(11px, 5px);
+  transform: rotateZ(405deg) translate(11px, 5px);
 }
 .change .line-2 {
   opacity: 0;
 }
 .change .line-3 {
-  transform: rotateZ(-45deg) translate(11px, -5px);
+  transform: rotateZ(-405deg) translate(11px, -5px);
 }
 .nav_list {
   text-align: right;
@@ -110,39 +105,48 @@ nav {
 .nav_link:hover::after {
   transform: scaleX(1);
 }
-/* .logo {
-  color: #ffe6ff;
-  font-size: 1.5rem;
-  font-weight: bold;
+
+@media (min-width: 800px) {
+  .nav {
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 0;
+    padding: 0.5rem;
+  }
+  .nav_items {
+    display: flex;
+    flex-direction: row;
+  }
+  .nav_list {
+    padding: 1rem;
+    margin-left: 0.5rem;
+    list-style: none;
+    margin-top: 2rem;
+  }
+  .nav_link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    position: relative;
+    font-size: 1rem;
+  }
+  .nav_link::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transition: transform 0.3s ease-in-out;
+    transform: scaleX(0);
+    transform-origin: center;
+  }
+  .nav_link:hover::after {
+    transform: scaleX(1);
+  }
+  .btn {
+    display: none;
+  }
 }
-.nav_items {
-  display: flex;
-  flex-direction: row;
-}
-.nav_list {
-  padding: 1rem;
-  margin-left: 0.5rem;
-  list-style: none;
-}
-.nav_link {
-  text-decoration: none;
-  color: white;
-  font-size: 1.5rem;
-  padding: 0.5rem;
-  position: relative;
-}
-.nav_link::after {
-  content: "";
-  width: 100%;
-  height: 2px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: white;
-  transition: transform 0.3s ease-in-out;
-  transform: scaleX(0);
-  transform-origin: center;
-}
-.nav_link:hover::after {
-  transform: scaleX(1);
-} */
