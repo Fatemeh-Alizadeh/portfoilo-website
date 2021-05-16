@@ -55,6 +55,11 @@ section {
   text-align: center;
   width: 100%;
 }
+@media (max-width: 600px) {
+  section {
+    padding: 4rem 3rem;
+  }
+}
 
 /* ...........Navbar style............. */
 
@@ -90,7 +95,6 @@ section {
   background-color: var(--clr-dark);
   color: var(--clr-light);
   text-align: center;
-
   position: relative;
 }
 .home.container {
@@ -128,7 +132,9 @@ section {
 }
 
 .home h1 {
-  margin-top: 10rem;
+  position: relative;
+  top: 2%;
+
   color: var(--clr-accent);
   font-size: var(--fs-h1);
   font-weight: var(--fw-bold);
@@ -144,24 +150,40 @@ section {
   position: absolute;
   top: 30%;
   left: 10%;
+
+  -moz-animation: spin 15s ease-in-out infinite;
+  -webkit-animation: spin 15s ease-in-out infinite;
+  -o-animation: spin 15s ease-in-out infinite;
   animation: spin 15s ease-in-out infinite;
 }
 .element-2 {
   width: 100px;
   height: 100px;
   background-color: #ffffcc;
+
+  -webkit-clip-path: circle(50% at 100% 51%);
+  -moz-clip-path: circle(50% at 100% 51%);
+  -o-clip-path: circle(50% at 100% 51%);
   clip-path: circle(50% at 100% 51%);
   position: absolute;
   top: 30%;
   right: 0;
+
+  -webkit-animation: bounce 10s linear infinite;
+  -moz-animation: bounce 10s linear infinite;
+  -o-animation: bounce 10s linear infinite;
   animation: bounce 10s linear infinite;
 }
 .element-3 {
   border-top: 40px solid transparent;
   border-left: 40px solid #99ff99;
   position: absolute;
-  top: 90%;
+  top: 80%;
   right: 50%;
+
+  -o-animation: walk 15s linear infinite;
+  -webkit-animation: walk 15s linear infinite;
+  -moz-animation: walk 15s linear infinite;
   animation: walk 15s linear infinite;
 }
 .element-3::after {
@@ -175,6 +197,43 @@ section {
 .element-4 {
   width: 60px;
   height: 60px;
+
+  -webkit-clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  -moz-clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  -o-clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
   clip-path: polygon(
     50% 0%,
     61% 35%,
@@ -191,16 +250,52 @@ section {
   position: absolute;
   top: 60%;
   right: 10%;
+
+  -webkit-animation: blink 10s ease-in-out infinite;
+  -moz-animation: blink 10s ease-in-out infinite;
+  -o-animation: blink 10s ease-in-out infinite;
   animation: blink 10s ease-in-out infinite;
 }
 .element-5 {
   width: 50px;
   height: 60px;
+
+  -webkit-clip-path: polygon(
+    78% 0,
+    78% 66%,
+    97% 67%,
+    50% 100%,
+    0 68%,
+    22% 67%,
+    22% 0
+  );
+  -moz-clip-path: polygon(
+    78% 0,
+    78% 66%,
+    97% 67%,
+    50% 100%,
+    0 68%,
+    22% 67%,
+    22% 0
+  );
+  -o-clip-path: polygon(
+    78% 0,
+    78% 66%,
+    97% 67%,
+    50% 100%,
+    0 68%,
+    22% 67%,
+    22% 0
+  );
   clip-path: polygon(78% 0, 78% 66%, 97% 67%, 50% 100%, 0 68%, 22% 67%, 22% 0);
   background-color: #ffccff;
   position: absolute;
-  top: 70%;
+  top: 65%;
   right: 75%;
+
+  -webkit-animation: bounce 16s ease-in-out infinite;
+  -moz-animation: bounce 16s ease-in-out infinite;
+  -o-animation: bounce 16s ease-in-out infinite;
   animation: bounce 16s ease-in-out infinite;
   border: none;
 }
