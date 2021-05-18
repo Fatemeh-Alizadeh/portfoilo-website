@@ -355,6 +355,14 @@ section {
 .about_text p {
   color: var(--clr-dark);
 }
+.about_icon {
+  text-decoration: none;
+  color: var(--clr-dark);
+  text-align: left;
+}
+.about_icon:hover {
+  color: var(--clr-accent);
+}
 
 /* .....................Projects Section.................... */
 
@@ -451,14 +459,16 @@ textarea {
 .icons {
   margin-top: 2rem;
 }
-
-.icons p {
+.icons_text {
   color: var(--clr-dark);
+  font-size: 1.12rem;
 }
+
 i {
   font-size: 1.5rem;
   color: var(--clr-dark);
   padding: 0.5rem;
+  margin: 0.5rem;
 }
 .icons_link i:hover {
   cursor: pointer;
