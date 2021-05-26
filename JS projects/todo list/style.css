@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Waiting+for+the+Sunrise&display=swap");
+
+:root {
+  --ff-title: "Hachi Maru Pop", cursive;
+  --ff-body: "Waiting for the Sunrise", cursive;
+  --clr-dark: #202060;
+  --clr-light: #ececf9;
+  --clr-blue: #5353c6;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--clr-blue);
+  font-family: var(--ff-body);
+  text-align: center;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  font-family: var(--ff-title);
+  font-weight: 900;
+  font-size: 2rem;
+  color: var(--clr-dark);
+  text-transform: uppercase;
+  margin: 2rem;
+}
+.add-todos {
+  color: var(--clr-light);
+}
+.add-todos_input {
+  padding: 0.5rem;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  background: transparent;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid var(--clr-light);
+  color: var(--clr-light);
+  font-family: var(--ff-body);
+  font-size: 1rem;
+}
+.add-todos_input::placeholder {
+  color: var(--clr-light);
+  font-family: var(--ff-title);
+}
+
+.add-todos_btn {
+  cursor: pointer;
+  padding: 0.3rem;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--clr-light);
+  transition: transform 0.3s ease-in-out;
+}
+.add-todos_btn:hover {
+  transform: scale(1.2);
+}
+.todos_list {
+  min-width: 15rem;
+}
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0.5rem;
+  background-color: rgb(32, 32, 96, 0.5);
+  list-style: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--clr-light);
+}
+
+.todos_item {
+  flex: 1;
+}
+
+.complete-btn,
+.trash-btn {
+  cursor: pointer;
+  padding: 0.25rem;
+  background: transparent;
+  color: var(--clr-light);
+  border: none;
+  outline: none;
+  transition: transform 0.3s ease-in-out;
+}
+.complete-btn:hover,
+.trash-btn:hover {
+  transform: scale(1.2);
+}
+.clear_btn {
+  cursor: pointer;
+  background: var(--clr-dark);
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  color: var(--clr-light);
+  font-family: var(--ff-title);
+  text-transform: uppercase;
+  margin-top: 2rem;
+  transition: color 0.3s ease-in;
+}
+.clear_btn:hover {
+  color: red;
+}

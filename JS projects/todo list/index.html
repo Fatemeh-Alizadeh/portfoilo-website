@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
     <title>todo list</title>
 </head>
 <body>
@@ -12,28 +15,18 @@
        <h1 class="header">todo list</h1>
        <div class="add-todos">
            <form action="">
-               <input type="text" class="add-todos_input" placeholder="new task" aria-label="add new task">
-               <button class="add-todos_btn" aria-label="add button">+</button>
+               <input type="text" 
+               class="add-todos_input" 
+               placeholder="new task" 
+               aria-label="add new task">
+               <button class="add-todos_btn" type="submit" aria-label="add button">+</button>
            </form>
        </div>
        <div class="todos">
-           <div class="todo">
-               <input type="checkbox" id="task-1" />
-               <label for="task-1">
-               <span class="custom-checkbox"></span>
-                record todo list video
-              </label>
-         </div>
+          <ul class="todos_list">
 
-        <div class="todo">
-            <input type="checkbox" id="task-2" />
-            <label for="task-2">
-                <span class="custom-checkbox"></span>
-                record todo list video
-            </label>
+          </ul>
         </div>
-            
-       </div>
 
        <div class="clear">
            <button class="clear_btn" aria-label="delete all todos">delete all</button>
