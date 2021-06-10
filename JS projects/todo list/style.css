@@ -48,7 +48,7 @@ body {
     rgba(225, 249, 248, 0.2) 48%,
     rgba(212, 247, 247, 0.2) 100%
   );
-  width: 25%;
+  width: 18rem;
   border-radius: 10px;
   box-shadow: 0 15px 55px rgba(0, 0, 0, 0.2);
   margin-bottom: 2.5rem;
@@ -57,7 +57,7 @@ body {
   align-items: center;
 }
 .add-todos_input {
-  padding: 1rem;
+  padding: 0.5rem;
   border: none;
   outline: none;
   background: transparent;
@@ -84,7 +84,7 @@ body {
   transform: rotate(90deg);
 }
 .todos {
-  width: 25%;
+  width: 18rem;
 }
 .todos_list {
   width: 100%;
@@ -111,6 +111,7 @@ body {
 
 .todos_item {
   flex: 1;
+  word-wrap: break-word;
 }
 .complete {
   text-decoration: line-through;

@@ -19,7 +19,7 @@ function add(e) {
     const todosItem = document.createElement('li');
     todosItem.classList.add('todos_item');
     const value = todosItem.innerText = addInput.value;
-    if (value == null || value === '') return;
+    if (addInput === null || value === '') return 
     todoDiv.appendChild(todosItem);
 
     save(addInput.value);
