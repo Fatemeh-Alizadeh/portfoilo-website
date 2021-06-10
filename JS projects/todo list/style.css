@@ -93,7 +93,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex: 1;
 
   margin: 0.5rem;
   padding: 0.5rem;
@@ -107,7 +106,7 @@ body {
   box-shadow: 0 5px 45px rgba(0, 0, 0, 0.2);
   list-style: none;
   font-size: 1.25rem;
-
+  position: relative;
   color: #ffe6f2;
 }
 
@@ -129,6 +128,10 @@ body {
   border: none;
   outline: none;
   transition: transform 0.3s ease-in-out;
+}
+.complete-btn {
+  position: absolute;
+  right: 1.75rem;
 }
 
 .fa-trash,
