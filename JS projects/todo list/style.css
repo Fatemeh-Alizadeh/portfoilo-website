@@ -93,6 +93,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex: 1;
+
   margin: 0.5rem;
   padding: 0.5rem;
   background: linear-gradient(
@@ -110,7 +112,6 @@ body {
 }
 
 .todos_item {
-  flex: 1;
   word-wrap: break-word;
 }
 .complete {

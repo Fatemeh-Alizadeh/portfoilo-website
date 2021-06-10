@@ -12,15 +12,20 @@ todoList.addEventListener('click', deleteCheck);
 function add(e) {
     e.preventDefault();
 
-    const todoDiv = document.createElement('div');
-    todoDiv.classList.add('todo');
-    todoList.appendChild(todoDiv);
 
     const todosItem = document.createElement('li');
-    todosItem.classList.add('todos_item');
-    const value = todosItem.innerText = addInput.value;
-    if (addInput === null || value === '') return 
-    todoDiv.appendChild(todosItem);
+     todosItem.innerText = addInput.value;
+    if (addInput.value === "" || addInput == null) return 
+        
+    
+        todosItem.classList.add('todo');
+        todoList.appendChild(todosItem) ; 
+  
+       
+    
+         
+   
+    
 
     save(addInput.value);
     
@@ -28,13 +33,13 @@ function add(e) {
     const completeBtn = document.createElement('button');
     completeBtn .innerHTML = '<i class="fas fa-check"></i>';
     completeBtn .classList.add('complete-btn')
-    todoDiv.appendChild(completeBtn)
+    todosItem.appendChild(completeBtn)
 
 
     const trashBtn = document.createElement('button');
     trashBtn.innerHTML = '<i class="fas fa-trash"></i>';
     trashBtn.classList.add('trash-btn');
-    todoDiv.appendChild(trashBtn);
+    todosItem.appendChild(trashBtn);
 
     addInput.value = "";
 
@@ -87,8 +92,8 @@ function getTodo (){
 
     const todosItem = document.createElement('li');
     todosItem.classList.add('todos_item');
-    const value = todosItem.innerText = todo;
-    if (value == null || value === '') return;
+     todosItem.innerText = todo;
+    if (todo == null || todo === '') return;
     todoDiv.appendChild(todosItem);
 
     const completeBtn = document.createElement('button');
